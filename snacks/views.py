@@ -10,4 +10,4 @@ class snacksList(generics.ListCreateAPIView):
 class snacksDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = snacks.objects.all()
     serializer_class = snacksSerializer
-    permission_classes = (IsOwnerOrReadOnly,)
+    permission_classes = (IsOwnerOrReadOnly)
